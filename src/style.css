@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Dont Melt Drip';
+    src: url('DontMeltDrip-Regular.woff2') format('woff2'),
+        url('DontMeltDrip-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dont Melt';
+    src: url('DontMelt-Regular.woff2') format('woff2'),
+        url('DontMelt-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap');
+
+
+:root {
+    --clr-primary: #fefae0;
+    --clr-secondary: #ccd5ae;
+    --clr-tertiary: #bf763c;
+    --clr-light: #fff;
+    --clr-dark: #000;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vh;
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: var(--clr-secondary);
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: var(--clr-primary);
+    padding: 25px;
+    color: var(--clr-dark);
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    font-family: 'Dont Melt Drip';
+    font-size: 80px;
+    color: var(--clr-tertiary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 25px;;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    border-bottom: 4px solid var(--clr-tertiary);
+}
