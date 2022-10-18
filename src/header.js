@@ -6,7 +6,7 @@ export default function header() {
     headerContainer.classList.add("header-container");
 
     const logo = document.createElement("div");
-    logo.textContent = "SUNDAE SUNDAY";
+    logo.textContent = "🍨 SUNDAE SUNDAY 🍨";
     logo.classList.add("logo");
     headerContainer.appendChild(logo);
 

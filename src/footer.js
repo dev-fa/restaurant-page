@@ -5,7 +5,7 @@ export default function footer() {
     const githubLink = document.createElement("a");
     githubLink.setAttribute("href", "https://github.com/dev-fa");
     githubLink.setAttribute("target", "_blank");
-    githubLink.textContent = "dev-fa"
+    githubLink.textContent = "💻 dev-fa"
     githubLink.classList.add("footer-text")
 
     const footerText = document.createElement("span");

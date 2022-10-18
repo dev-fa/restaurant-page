@@ -186,6 +186,30 @@ a {
     padding: 0 5px;
 }
 
+/* CONTACT */
+.contact {
+    background: var(--clr-primary-opaque);
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.contact-add,
+.contact-tel {
+    font-size: 24px;
+}
+
+.contact-add {
+    margin-bottom: 10px;
+}
+
+.contact-tel {
+    margin-bottom: 20px;
+}
+
+.contact-img {
+    border: 5px solid var(--clr-tertiary);
+}
 
 /* BUTTONS */
 .btn {
