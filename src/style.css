@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Dont Melt Drip';
-    src: url('DontMeltDrip-Regular.woff2') format('woff2'),
-        url('DontMeltDrip-Regular.woff') format('woff');
+    src: url('./fonts/DontMeltDrip-Regular.woff2') format('woff2'),
+        url('./fonts/DontMeltDrip-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Dont Melt';
-    src: url('DontMelt-Regular.woff2') format('woff2'),
-        url('DontMelt-Regular.woff') format('woff');
+    src: url('./fonts/DontMelt-Regular.woff2') format('woff2'),
+        url('./fonts/DontMeltDrip-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -21,6 +21,7 @@
 
 :root {
     --clr-primary: #fefae0;
+    --clr-primary-opaque: rgba(254, 250, 224, 0.5);
     --clr-secondary: #ccd5ae;
     --clr-tertiary: #bf763c;
     --clr-light: #fff;
@@ -53,6 +54,7 @@ a {
     cursor: pointer;
 }
 
+/* HEADER */
 .header {
     display: flex;
     justify-content: center;
@@ -87,10 +89,13 @@ a {
     cursor: pointer;
 }
 
-.nav-item:hover {
+.nav-item:hover,
+.nav-item:active,
+.active {
     border-bottom: 4px solid var(--clr-tertiary);
 }
 
+/* FOOTER */
 .footer {
     width: 100vw;
     background-color: var(--clr-tertiary);
@@ -104,6 +109,7 @@ a {
     font-weight: 500;
 }
 
+/* MODULE CONTAINER */
 #content {
     display: flex;
     justify-content: center;
@@ -111,8 +117,9 @@ a {
     padding: 100px 0;
 }
 
+/* HERO OR HOME */
 .hero {
-    background: rgba(254, 250, 224, 0.5);
+    background: var(--clr-primary-opaque);
     padding: 50px;
     border-radius: 20px;
     text-align: center;
@@ -127,16 +134,60 @@ a {
 }
 
 .hero-header {
+    font-size: 80px;
+}
+
+.hero-header,
+.menu-header {
+    font-family: "Dont Melt";
     margin-bottom: 10px;
 }
 
 .hero-para {
     max-width: 32ch;
-    font-size: 20px;
+    font-size: 26px;
     margin: 0 auto;
     margin-bottom: 10px;
 }
 
+/* MENU */
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 60vw;
+    gap: 25px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--clr-primary-opaque);
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.menu-item:hover {
+    border: 5px solid var(--clr-tertiary);
+}
+
+.menu-img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    border: 5px solid var(--clr-tertiary);
+}
+
+.menu-para {
+    padding: 0 5px;
+}
+
+
+/* BUTTONS */
 .btn {
     border: none;
     border-radius: 8px;

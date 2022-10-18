@@ -15,7 +15,7 @@ export default function header() {
 
     const navItem1 = document.createElement("li");
     navItem1.textContent = "HOME";
-    navItem1.classList.add("nav-item");
+    navItem1.classList.add("nav-item", "active");
     navItem1.setAttribute("id", "home");
     const navItem2 = document.createElement("li");
     navItem2.textContent = "MENU";

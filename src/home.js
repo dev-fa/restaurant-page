@@ -1,4 +1,4 @@
-import Image from "./hero.jpg";
+import Image from "./imgs/hero.jpg";
 
 
 export default function home () {
@@ -19,21 +19,16 @@ export default function home () {
     const heroPara = document.createElement("p");
     heroPara.classList.add("hero-para");
     const paraText = `
-        The best sundaes you can find. So good you wil be
+        The best sundaes you can find! So good you will be
         craving for more! From the classic ice cream sundae
         to banana splits and parfaits, we have them all. Get
         a taste of our sundaes now!
     `;
     heroPara.textContent = paraText;
 
-    const callToAction = document.createElement("button");
-    callToAction.classList.add("btn", "btn-primary");
-    callToAction.textContent = "Menu";
-
     hero.appendChild(heroImg);
     hero.appendChild(heroHeader);
     hero.appendChild(heroPara);
-    hero.appendChild(callToAction);
     home.appendChild(hero);
 
     return home;
