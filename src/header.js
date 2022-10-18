@@ -18,9 +18,9 @@ export default function header() {
     navItem1.classList.add("nav-item");
     navItem1.setAttribute("id", "home");
     const navItem2 = document.createElement("li");
-    navItem2.textContent = "ABOUT";
+    navItem2.textContent = "MENU";
     navItem2.classList.add("nav-item");
-    navItem2.setAttribute("id", "about");
+    navItem2.setAttribute("id", "menu");
     const navItem3 = document.createElement("li");
     navItem3.textContent = "CONTACT";
     navItem3.setAttribute("id", "contact");
